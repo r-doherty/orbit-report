@@ -1,5 +1,6 @@
 <h3>Satellite Counts:</h3>
 
 <div class="counts">
-   <div *ngFor="let label of rowHeadings">Total{{label}}:<span>{{9}}</span></div>
+   <div>Total:<span>{{satellites.length}}</span></div>
+   <div *ngFor="let type of rowHeadings">Total {{type}}:<span>{{count(type)}}</span></div>
 </div>
